@@ -7,4 +7,5 @@ body {
   background: #ffffff;
   color: #101626;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
