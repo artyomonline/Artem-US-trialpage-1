@@ -123,6 +123,18 @@ export default function FinalCTA({ selectedGrade }: Props) {
             By clicking, you agree to receive communications from MyEdSpace.
             You can unsubscribe anytime.
           </p>
+
+          {/* Payment logos */}
+          <div className="flex items-center justify-center gap-3">
+            {['visa', 'mastercard', 'amex', 'paypal'].map((brand) => (
+              <img
+                key={brand}
+                src={`https://cdn.jsdelivr.net/npm/payment-icons@1.1.0/min/flat/${brand}.svg`}
+                alt={brand}
+                style={{ height: '32px', filter: 'grayscale(1)', opacity: 0.5 }}
+              />
+            ))}
+          </div>
         </form>
 
         {/* Trust signals */}

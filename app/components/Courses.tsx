@@ -67,10 +67,6 @@ export default function Courses() {
           ))}
         </div>
 
-        {/* Bottom CTA note */}
-        <p className="text-center text-sm text-brand-dark/45 leading-relaxed">
-          Not sure which course? Select your child's grade above and we'll recommend the right one.
-        </p>
 
       </div>
     </section>

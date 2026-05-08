@@ -1,142 +1,102 @@
-import { Fragment, ReactNode } from 'react'
-
-interface Row {
-  label: string
-  school: ReactNode
-  tutor: ReactNode
-  mes: ReactNode
-}
-
-const ROWS: Row[] = [
-  {
-    label: 'Class size',
-    school: '30 kids',
-    tutor: '1:1',
-    mes: 'Group class, every question answered',
-  },
-  {
-    label: 'Teacher',
-    school: 'Rotates',
-    tutor: 'Inconsistent',
-    mes: (
-      <span className="text-brand-green font-bold">Same teacher, every lesson</span>
-    ),
-  },
-  {
-    label: 'Schedule',
-    school: 'Fixed school hours',
-    tutor: 'You arrange',
-    mes: 'Live twice a week',
-  },
-  {
-    label: 'Pace',
-    school: 'Fixed',
-    tutor: 'Variable',
-    mes: "Your child's pace",
-  },
-  {
-    label: 'Recordings',
-    school: 'No',
-    tutor: 'No',
-    mes: 'Every session recorded',
-  },
-  {
-    label: 'HW help',
-    school: 'No',
-    tutor: 'Extra cost',
-    mes: 'AI coach included',
-  },
-  {
-    label: 'Cost',
-    school: 'Free',
-    tutor: '$640+/mo',
-    mes: (
-      <>$149/mo · <span className="text-brand-green font-bold">$7 to start</span></>
-    ),
-  },
+const ROWS = [
+  { label: 'Same teacher every time', school: false, tutor: false, mes: true },
+  { label: 'Live classes',            school: false, tutor: true,  mes: true },
+  { label: 'Recordings included',     school: false, tutor: false, mes: true },
+  { label: 'Homework help',           school: false, tutor: false, mes: true },
+  { label: "Your child's pace",       school: false, tutor: false, mes: true },
+  { label: 'Under $200/month',        school: true,  tutor: false, mes: true },
+  { label: 'Start for $7',            school: false, tutor: false, mes: true },
 ]
+
+const Check = () => (
+  <span className="text-brand-green font-bold text-[20px] leading-none">✓</span>
+)
+
+const Cross = () => (
+  <span className="font-bold text-[20px] leading-none" style={{ color: '#F8375A' }}>✗</span>
+)
 
 export default function Comparison() {
   return (
-    <section className="bg-brand-blue px-4 sm:px-6 py-16 sm:py-24 text-white">
+    <section className="bg-brand-blue px-4 sm:px-6 py-16 sm:py-24">
       <div className="max-w-5xl mx-auto">
 
-        <h2 className="text-[32px] sm:text-[48px] font-black leading-tight tracking-tight mb-12 text-center">
+        <h2 className="text-[32px] sm:text-[48px] font-black leading-tight tracking-tight mb-12 text-white text-center">
           How MyEdSpace compares to everything else you've tried
         </h2>
 
-        {/* Mobile: label once per row, values in 3 cols below */}
-        <div className="sm:hidden">
-          {/* Column headers */}
-          <div className="grid grid-cols-3 gap-px bg-white/20 mb-4">
-            <div className="bg-brand-blue px-3 py-3">
-              <p className="text-[10px] font-black text-white uppercase tracking-wide leading-tight">School</p>
-            </div>
-            <div className="bg-brand-blue px-3 py-3">
-              <p className="text-[10px] font-black text-white uppercase tracking-wide leading-tight">Private Tutor</p>
-            </div>
-            <div className="bg-brand-green px-3 py-3">
-              <p className="text-[10px] font-black text-brand-dark uppercase tracking-wide leading-tight">MyEdSpace</p>
-            </div>
-          </div>
-
-          {/* Rows */}
-          <div className="space-y-4">
+        <table
+          className="w-full table-fixed border-collapse"
+          style={{ border: '2px solid #101626' }}
+        >
+          <thead>
+            <tr>
+              <th
+                className="w-[110px] sm:w-[200px] bg-brand-blue p-4"
+                style={{ borderRight: '1px solid #e5e7eb', borderBottom: '1px solid #e5e7eb' }}
+              />
+              <th
+                className="p-4 text-center text-brand-dark font-bold text-lg bg-white"
+                style={{ borderRight: '1px solid #e5e7eb', borderBottom: '1px solid #e5e7eb' }}
+              >
+                School
+              </th>
+              <th
+                className="p-4 text-center text-brand-dark font-bold text-lg bg-white"
+                style={{ borderRight: '1px solid #e5e7eb', borderBottom: '1px solid #e5e7eb' }}
+              >
+                Private<br />Tutor
+              </th>
+              <th
+                className="p-4 text-center text-brand-dark font-bold text-lg bg-brand-green"
+                style={{ borderBottom: '1px solid #e5e7eb' }}
+              >
+                MyEdSpace
+              </th>
+            </tr>
+          </thead>
+          <tbody>
             {ROWS.map((row, i) => (
-              <div key={i}>
-                <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-white/50 mb-1.5 px-1">
-                  {row.label}
-                </p>
-                <div className="grid grid-cols-3 gap-px bg-white/20">
-                  <div className="bg-brand-blue px-3 py-3">
-                    <p className="text-xs text-white leading-snug">{row.school}</p>
-                  </div>
-                  <div className="bg-brand-blue px-3 py-3">
-                    <p className="text-xs text-white leading-snug">{row.tutor}</p>
-                  </div>
-                  <div className="bg-white px-3 py-3">
-                    <p className="text-xs text-brand-dark font-semibold leading-snug">{row.mes}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Desktop: standard table, labels on left */}
-        <div className="hidden sm:block">
-          <table className="w-full border-collapse">
-            <thead>
-              <tr className="border-b-2 border-white/20">
-                <th className="text-left py-4 pr-8 w-[150px]" />
-                <th className="text-left py-4 px-5 text-white font-black text-base uppercase tracking-wide">
-                  School
-                </th>
-                <th className="text-left py-4 px-5 text-white font-black text-base uppercase tracking-wide">
-                  Private Tutor
-                </th>
-                <th className="text-left py-4 px-5 text-brand-green font-black text-base uppercase tracking-wide bg-white/10">
-                  MyEdSpace
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {ROWS.map((row, i) => (
-                <tr
-                  key={row.label}
-                  className={`border-b border-white/10 ${i % 2 !== 0 ? 'bg-white/[0.03]' : ''}`}
+              <tr key={row.label}>
+                <td
+                  className="bg-brand-blue p-4 text-white font-bold uppercase leading-tight text-[11px] sm:text-[12px]"
+                  style={{
+                    borderRight: '1px solid #e5e7eb',
+                    borderBottom: i < ROWS.length - 1 ? '1px solid #e5e7eb' : undefined,
+                  }}
                 >
-                  <td className="py-4 pr-8 text-white font-bold text-sm uppercase tracking-wider">
-                    {row.label}
-                  </td>
-                  <td className="py-4 px-5 text-white text-base">{row.school}</td>
-                  <td className="py-4 px-5 text-white text-base">{row.tutor}</td>
-                  <td className="py-4 px-5 text-white font-semibold text-base bg-white/10">{row.mes}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+                  {row.label}
+                </td>
+                <td
+                  className="bg-white p-4 text-center"
+                  style={{
+                    borderRight: '1px solid #e5e7eb',
+                    borderBottom: i < ROWS.length - 1 ? '1px solid #e5e7eb' : undefined,
+                  }}
+                >
+                  {row.school ? <Check /> : <Cross />}
+                </td>
+                <td
+                  className="bg-white p-4 text-center"
+                  style={{
+                    borderRight: '1px solid #e5e7eb',
+                    borderBottom: i < ROWS.length - 1 ? '1px solid #e5e7eb' : undefined,
+                  }}
+                >
+                  {row.tutor ? <Check /> : <Cross />}
+                </td>
+                <td
+                  className="bg-white p-4 text-center"
+                  style={{
+                    borderBottom: i < ROWS.length - 1 ? '1px solid #e5e7eb' : undefined,
+                  }}
+                >
+                  {row.mes ? <Check /> : <Cross />}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
 
       </div>
     </section>
