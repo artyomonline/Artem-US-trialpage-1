@@ -74,7 +74,7 @@ export default function FAQ() {
                 </span>
               </button>
               {openIndices.has(i) && (
-                <p className="pb-5 text-brand-dark/65 text-lg leading-relaxed">
+                <p className="pb-5 text-brand-dark text-lg leading-relaxed">
                   {faq.a}
                 </p>
               )}

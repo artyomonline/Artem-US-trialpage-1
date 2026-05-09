@@ -25,7 +25,7 @@ export default function FinalCTA({ selectedGrade }: Props) {
           <span className="text-brand-green">every time</span>
         </h2>
 
-        <p className="text-lg text-white/70 text-center mb-10 leading-relaxed">
+        <p className="text-lg text-white text-center mb-10 leading-relaxed">
           Start for <span className="text-brand-green font-bold">$7.</span>{' '}
           See the difference in the first week.
         </p>
@@ -38,7 +38,7 @@ export default function FinalCTA({ selectedGrade }: Props) {
           {/* First + Last name */}
           <div className="grid grid-cols-2 gap-3">
             <div className="flex flex-col gap-1.5">
-              <label className="text-sm font-bold text-brand-dark/60 uppercase tracking-wide">
+              <label className="text-sm font-bold text-brand-dark uppercase tracking-wide">
                 First name
               </label>
               <input
@@ -49,7 +49,7 @@ export default function FinalCTA({ selectedGrade }: Props) {
               />
             </div>
             <div className="flex flex-col gap-1.5">
-              <label className="text-sm font-bold text-brand-dark/60 uppercase tracking-wide">
+              <label className="text-sm font-bold text-brand-dark uppercase tracking-wide">
                 Last name
               </label>
               <input
@@ -63,7 +63,7 @@ export default function FinalCTA({ selectedGrade }: Props) {
 
           {/* Email */}
           <div className="flex flex-col gap-1.5">
-            <label className="text-xs font-bold text-brand-dark/60 uppercase tracking-wide">
+            <label className="text-xs font-bold text-brand-dark uppercase tracking-wide">
               Email address
             </label>
             <input
@@ -76,7 +76,7 @@ export default function FinalCTA({ selectedGrade }: Props) {
 
           {/* Phone */}
           <div className="flex flex-col gap-1.5">
-            <label className="text-xs font-bold text-brand-dark/60 uppercase tracking-wide">
+            <label className="text-xs font-bold text-brand-dark uppercase tracking-wide">
               Phone number
             </label>
             <div className="flex">
@@ -94,7 +94,7 @@ export default function FinalCTA({ selectedGrade }: Props) {
 
           {/* Grade */}
           <div className="flex flex-col gap-1.5">
-            <label className="text-xs font-bold text-brand-dark/60 uppercase tracking-wide">
+            <label className="text-xs font-bold text-brand-dark uppercase tracking-wide">
               Grade
             </label>
             <select
@@ -119,7 +119,7 @@ export default function FinalCTA({ selectedGrade }: Props) {
           </button>
 
           {/* Microcopy */}
-          <p className="text-xs text-brand-dark/40 text-center leading-relaxed">
+          <p className="text-xs text-brand-dark text-center leading-relaxed">
             By clicking, you agree to receive communications from MyEdSpace.
             You can unsubscribe anytime.
           </p>
@@ -138,7 +138,7 @@ export default function FinalCTA({ selectedGrade }: Props) {
         </form>
 
         {/* Trust signals */}
-        <p className="mt-6 text-center text-sm text-white/50">
+        <p className="mt-6 text-center text-sm text-white">
           <span className="text-brand-green">★★★★★</span>{' '}
           Trusted by 21,000+ families
         </p>

@@ -31,10 +31,10 @@ export default function Testimonials() {
             <div key={i} className="border border-brand-dark/10 p-5 flex flex-col gap-3">
               <span className="text-brand-green text-sm tracking-tight">★★★★★</span>
               <p className="font-bold text-brand-dark text-lg leading-snug">{review.title}</p>
-              <p className="text-brand-dark/60 text-lg leading-relaxed flex-1">{review.body}</p>
+              <p className="text-brand-dark text-lg leading-relaxed flex-1">{review.body}</p>
               <div className="pt-3 border-t border-brand-dark/8">
                 <p className="text-brand-dark font-semibold text-sm">{review.name}</p>
-                <p className="text-brand-dark/40 text-sm mt-0.5">{review.city} · {review.date}</p>
+                <p className="text-brand-dark text-sm mt-0.5">{review.city} · {review.date}</p>
               </div>
             </div>
           ))}

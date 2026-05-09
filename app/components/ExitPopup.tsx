@@ -60,7 +60,7 @@ export default function ExitPopup() {
         <button
           onClick={dismiss}
           aria-label="Close"
-          className="absolute top-4 right-4 text-brand-dark/40 hover:text-brand-dark text-xl leading-none motion-safe:transition-colors"
+          className="absolute top-4 right-4 text-brand-dark hover:text-brand-dark text-xl leading-none motion-safe:transition-colors"
         >
           ✕
         </button>
@@ -68,7 +68,7 @@ export default function ExitPopup() {
         <h3 className="text-xl sm:text-2xl font-black text-brand-dark mb-3">
           Still looking for answers?
         </h3>
-        <p className="text-brand-dark/60 text-lg leading-relaxed mb-6">
+        <p className="text-brand-dark text-lg leading-relaxed mb-6">
           Leave your details and we'll reach out to help you find the right course for your child.
         </p>
 
@@ -105,7 +105,7 @@ export default function ExitPopup() {
           </button>
         </form>
 
-        <p className="mt-3 text-sm text-brand-dark/40 text-center">
+        <p className="mt-3 text-sm text-brand-dark text-center">
           We'll get back to you within 24 hours.
         </p>
       </div>

@@ -18,7 +18,7 @@ export default function Pricing() {
         </h2>
 
         {/* Price anchor — $640 shown first, per GROWTH_PRINCIPLES #2 */}
-        <div className="space-y-2 text-lg text-white/65 mb-10 leading-relaxed">
+        <div className="space-y-2 text-lg text-white mb-10 leading-relaxed">
           <p>Private tutors charge <strong className="text-white">$640+/month.</strong></p>
           <p>MyEdSpace costs <strong className="text-white">$149/month.</strong></p>
           <p>Your first 7 days: <span className="text-brand-green font-bold">$7.</span></p>
@@ -28,12 +28,12 @@ export default function Pricing() {
         <div className="border-2 border-brand-green p-8 mb-8 text-left">
           <div className="mb-6 pb-6 border-b border-white/15">
             <p className="text-xl sm:text-2xl font-black text-white">$7 Trial – 7 days of full access</p>
-            <p className="text-white/50 text-sm mt-1">Then $149/month - no auto-enrollment</p>
+            <p className="text-white text-sm mt-1">Then $149/month - no auto-enrollment</p>
           </div>
 
           <ul className="space-y-3">
             {INCLUDED.map((item) => (
-              <li key={item} className="flex items-start gap-3 text-lg text-white/80">
+              <li key={item} className="flex items-start gap-3 text-lg text-white">
                 <span className="text-brand-green font-bold shrink-0 mt-0.5">✓</span>
                 {item}
               </li>
@@ -48,13 +48,13 @@ export default function Pricing() {
             Try 7 days for $7
           </a>
 
-          <p className="mt-3 text-xs text-white/40 text-center leading-relaxed">
+          <p className="mt-3 text-xs text-white text-center leading-relaxed">
             After 7 days, no automatic charge. You decide whether to continue at $149/month.
           </p>
         </div>
 
         {/* Guarantee */}
-        <p className="text-sm text-white/50 leading-relaxed">
+        <p className="text-sm text-white leading-relaxed">
           Not happy after your first month? We offer a{' '}
           <span className="text-white font-semibold">30-day money-back guarantee</span>{' '}
           on your first full month payment.

@@ -37,7 +37,7 @@ export default function Courses() {
         </h2>
 
         {/* Subhead */}
-        <p className="text-lg text-brand-dark/60 text-center mb-12 leading-relaxed">
+        <p className="text-lg text-brand-dark text-center mb-12 leading-relaxed">
           Four courses for students aged 11–17.
           Each has its own curriculum, workbooks, and class group.
         </p>
@@ -50,9 +50,9 @@ export default function Courses() {
               className="border border-brand-dark/10 border-l-4 border-l-brand-blue p-6 flex flex-col gap-3"
             >
               <h3 className="text-xl sm:text-2xl font-black text-brand-dark">{course.name}</h3>
-              <p className="text-brand-dark/65 text-sm leading-relaxed">{course.description}</p>
-              <p className="text-brand-dark/50 text-sm leading-relaxed">
-                <span className="font-semibold text-brand-dark/70">Key topics: </span>
+              <p className="text-brand-dark text-sm leading-relaxed">{course.description}</p>
+              <p className="text-brand-dark text-sm leading-relaxed">
+                <span className="font-semibold text-brand-dark">Key topics: </span>
                 {course.topics}
               </p>
               <a

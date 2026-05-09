@@ -40,7 +40,7 @@ export default function Eddie() {
             </div>
 
             {/* Body */}
-            <div className="space-y-5 text-lg text-white/75 leading-relaxed mb-8">
+            <div className="space-y-5 text-lg text-white leading-relaxed mb-8">
               <p>
                 Eddie Kang has spent 9 years teaching math in California high
                 schools and colleges. At MyEdSpace, he teaches{' '}
@@ -56,11 +56,11 @@ export default function Eddie() {
 
             {/* Quote */}
             <blockquote className="border-l-4 border-brand-green pl-5">
-              <p className="text-white/85 text-lg leading-relaxed italic mb-3">
+              <p className="text-white text-lg leading-relaxed italic mb-3">
                 "I teach every single lesson myself, start to finish. If that's
                 what you've been looking for, you're in the right place."
               </p>
-              <cite className="text-white/45 text-sm not-italic">
+              <cite className="text-white text-sm not-italic">
                 – Eddie Kang, @EddieDoesMath
               </cite>
             </blockquote>

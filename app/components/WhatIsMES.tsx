@@ -26,15 +26,15 @@ export default function WhatIsMES() {
 
         {/* Intro */}
         <div className="max-w-2xl mb-14">
-          <p className="text-lg text-brand-dark/65 leading-relaxed mb-4">
+          <p className="text-lg text-brand-dark leading-relaxed mb-4">
             This is Eddie's classroom. Your child gets a front-row seat.
           </p>
-          <p className="text-lg text-brand-dark/65 leading-relaxed mb-4">
+          <p className="text-lg text-brand-dark leading-relaxed mb-4">
             Live math class, twice a week. Same teacher, same curriculum,
             same group — building on itself week after week until it
             actually sticks.
           </p>
-          <p className="text-lg text-brand-dark/65 leading-relaxed">
+          <p className="text-lg text-brand-dark leading-relaxed">
             Your child joins from home, asks questions live, rewatches
             anything they missed. No random tutors. No starting over
             every session.
@@ -71,7 +71,7 @@ export default function WhatIsMES() {
 
             <div className="flex items-start gap-3">
               <span className="text-xl leading-none mt-0.5 shrink-0">🎥</span>
-              <p className="text-lg text-brand-dark/70 leading-snug">
+              <p className="text-lg text-brand-dark leading-snug">
                 Live classes with real-time{' '}
                 <span className="text-brand-green font-bold">chat</span> – every question gets answered
               </p>
@@ -79,14 +79,14 @@ export default function WhatIsMES() {
 
             <div className="flex items-start gap-3">
               <span className="text-xl leading-none mt-0.5 shrink-0">⏺️</span>
-              <p className="text-lg text-brand-dark/70 leading-snug">
+              <p className="text-lg text-brand-dark leading-snug">
                 <span className="text-brand-green font-bold">Recordings</span> of every session, rewatch any moment, anytime
               </p>
             </div>
 
             <div className="flex items-start gap-3">
               <span className="text-xl leading-none mt-0.5 shrink-0">📓</span>
-              <p className="text-lg text-brand-dark/70 leading-snug">
+              <p className="text-lg text-brand-dark leading-snug">
                 Professionally designed{' '}
                 <span className="text-brand-green font-bold">printable workbooks</span> for each lesson
               </p>
@@ -94,7 +94,7 @@ export default function WhatIsMES() {
 
             <div className="flex items-start gap-3">
               <span className="text-xl leading-none mt-0.5 shrink-0">✏️</span>
-              <p className="text-lg text-brand-dark/70 leading-snug">
+              <p className="text-lg text-brand-dark leading-snug">
                 Homework with scoring +{' '}
                 <span className="text-brand-green font-bold">video explanation</span> for every task
               </p>
@@ -102,14 +102,14 @@ export default function WhatIsMES() {
 
             <div className="flex items-start gap-3">
               <span className="text-xl leading-none mt-0.5 shrink-0">🤖</span>
-              <p className="text-lg text-brand-dark/70 leading-snug">
+              <p className="text-lg text-brand-dark leading-snug">
                 <span className="text-brand-green font-bold">AI math coach</span> for when they're stuck between classes
               </p>
             </div>
 
             <div className="flex items-start gap-3">
               <span className="text-xl leading-none mt-0.5 shrink-0">📱</span>
-              <p className="text-lg text-brand-dark/70 leading-snug">
+              <p className="text-lg text-brand-dark leading-snug">
                 Works on <span className="text-brand-green font-bold">any device</span>, from anywhere
               </p>
             </div>
@@ -118,7 +118,7 @@ export default function WhatIsMES() {
         </div>
 
         {/* Closing line */}
-        <p className="text-center text-[20px] font-bold text-brand-dark/65 leading-relaxed">
+        <p className="text-center text-[20px] font-bold text-brand-dark leading-relaxed">
           Everything designed for one thing: your child feeling{' '}
           <span className="text-brand-green font-black">confident</span> in math.
         </p>

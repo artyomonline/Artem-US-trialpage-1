@@ -9,7 +9,7 @@ export default function Footer() {
         </svg>
 
         {/* Links */}
-        <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-white/50">
+        <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-white">
           <a href="#" className="hover:text-white motion-safe:transition-colors">Terms of Service</a>
           <a href="#" className="hover:text-white motion-safe:transition-colors">Privacy Policy</a>
           <a href="#" className="hover:text-white motion-safe:transition-colors">Contact Us</a>
@@ -24,7 +24,7 @@ export default function Footer() {
         </nav>
 
         {/* Copyright */}
-        <p className="text-sm text-white/30">© 2026 MyEdSpace. All rights reserved.</p>
+        <p className="text-sm text-white">© 2026 MyEdSpace. All rights reserved.</p>
 
       </div>
     </footer>

@@ -25,7 +25,7 @@ export default function Hero() {
         </h1>
 
         {/* Subhead */}
-        <p className="text-lg text-brand-dark/60 mb-10 leading-relaxed">
+        <p className="text-lg text-brand-dark mb-10 leading-relaxed">
           Live classes twice a week, in your timezone.
         </p>
 
@@ -59,7 +59,7 @@ export default function Hero() {
             </svg>
 
             {/* Review count */}
-            <span className="text-brand-dark/60"><strong className="text-brand-dark">2,155</strong> reviews on</span>
+            <span className="text-brand-dark"><strong className="text-brand-dark">2,155</strong> reviews on</span>
 
             {/* Trustpilot wordmark */}
             <svg width={65} height={16} viewBox="0 0 126 31" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Trustpilot">

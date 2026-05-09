@@ -10,7 +10,7 @@ export default function Problem() {
           <span className="text-brand-green">clicking</span>
         </h2>
 
-        <div className="space-y-8 text-lg text-white/75 leading-[1.8]">
+        <div className="space-y-8 text-lg text-white leading-[1.8]">
           <p>
             <span className="text-[#F8375A] font-bold">30 kids</span> in one
             class. One teacher moving at the class pace, not your child's pace.
