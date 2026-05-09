@@ -22,7 +22,7 @@ export default function FinalCTA({ selectedGrade }: Props) {
         {/* Headline — Peak-End Rule: emotionally resonant final moment (GROWTH_PRINCIPLES #9) */}
         <h2 className="text-[32px] sm:text-[48px] font-black leading-tight tracking-tight mb-4 text-center">
           Your child deserves a teacher who shows up{' '}
-          <span className="text-brand-green">every time.</span>
+          <span className="text-brand-green">every time</span>
         </h2>
 
         <p className="text-lg text-white/70 text-center mb-10 leading-relaxed">

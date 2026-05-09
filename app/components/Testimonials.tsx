@@ -60,7 +60,6 @@ export default function Testimonials() {
           >
             Try 7 days for $7
           </a>
-          <p className="mt-3 text-sm text-brand-dark/40">$7 for 7 days · Cancel anytime</p>
         </div>
 
       </div>

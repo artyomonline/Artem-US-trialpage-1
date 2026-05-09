@@ -8,7 +8,7 @@ export default function WhatIsMES() {
         {/* Headline */}
         <h2 className="text-[32px] sm:text-[48px] font-black leading-tight tracking-tight mb-8 text-brand-dark text-center">
           Not a tutor. Not an app.{' '}
-          <span className="text-brand-green">Something better.</span>
+          <span className="text-brand-green">Something better</span>
         </h2>
 
         {/* Eddie image */}
@@ -80,7 +80,7 @@ export default function WhatIsMES() {
             <div className="flex items-start gap-3">
               <span className="text-xl leading-none mt-0.5 shrink-0">⏺️</span>
               <p className="text-lg text-brand-dark/70 leading-snug">
-                Recordings of every session, rewatch any moment, anytime
+                <span className="text-brand-green font-bold">Recordings</span> of every session, rewatch any moment, anytime
               </p>
             </div>
 
@@ -103,14 +103,14 @@ export default function WhatIsMES() {
             <div className="flex items-start gap-3">
               <span className="text-xl leading-none mt-0.5 shrink-0">🤖</span>
               <p className="text-lg text-brand-dark/70 leading-snug">
-                AI math coach for when they're stuck between classes
+                <span className="text-brand-green font-bold">AI math coach</span> for when they're stuck between classes
               </p>
             </div>
 
             <div className="flex items-start gap-3">
               <span className="text-xl leading-none mt-0.5 shrink-0">📱</span>
               <p className="text-lg text-brand-dark/70 leading-snug">
-                Works on any device, from anywhere
+                Works on <span className="text-brand-green font-bold">any device</span>, from anywhere
               </p>
             </div>
 

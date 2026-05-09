@@ -8,7 +8,7 @@ export default function Eddie() {
         {/* Headline */}
         <h2 className="text-[32px] sm:text-[48px] font-black leading-tight tracking-tight mb-12 text-center">
           Meet Eddie – the teacher your child will actually{' '}
-          <span className="text-brand-green">look forward to.</span>
+          <span className="text-brand-green">look forward to</span>
         </h2>
 
         {/* Photo + content */}
@@ -70,6 +70,9 @@ export default function Eddie() {
 
         {/* Intro video */}
         <div className="max-w-3xl mx-auto">
+          <h2 className="text-[32px] sm:text-[48px] font-black leading-tight tracking-tight text-white text-center mb-8">
+            From struggling to confident.<br />See how – in 60 seconds
+          </h2>
           <video
             src="/assets/video/MES_intro.mp4"
             poster="/assets/img/eddie_4.webp"

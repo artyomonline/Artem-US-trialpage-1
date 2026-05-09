@@ -21,7 +21,7 @@ export default function Hero() {
           Your child isn't bad at math.
           <br />
           They just haven't had the{' '}
-          <span className="text-brand-green">right teacher</span> yet.
+          <span className="text-brand-green">right teacher</span> yet
         </h1>
 
         {/* Subhead */}

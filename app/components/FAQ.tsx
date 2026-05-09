@@ -5,7 +5,7 @@ import { useState } from 'react'
 const FAQS = [
   {
     q: 'What happens after the $7 trial?',
-    a: 'After 7 days, your subscription continues at $149/month. Cancel anytime before the trial ends and you won\'t be charged.',
+    a: 'Nothing automatic. After 7 days your trial ends and you\'ll choose whether to enroll. No surprise charges, no auto-renewals.',
   },
   {
     q: 'What if my child misses a class?',
@@ -32,36 +32,48 @@ const FAQS = [
     a: 'Any device with a browser: laptop, tablet, or phone. No downloads required.',
   },
   {
+    q: 'When does the course run?',
+    a: 'The course runs October through May - but you can join at any point during the year and jump straight in.',
+  },
+  {
     q: 'Is there a contract or long-term commitment?',
-    a: 'No. Month-to-month, cancel anytime.',
+    a: 'No contract. Choose the payment plan that works for you: monthly, annual (with a discount), or installments.',
   },
 ]
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null)
+  const [openIndices, setOpenIndices] = useState<Set<number>>(new Set())
+
+  function toggle(i: number) {
+    setOpenIndices(prev => {
+      const next = new Set(prev)
+      next.has(i) ? next.delete(i) : next.add(i)
+      return next
+    })
+  }
 
   return (
     <section className="bg-white px-4 sm:px-6 py-16 sm:py-24">
       <div className="max-w-2xl mx-auto">
 
         <h2 className="text-[32px] sm:text-[48px] font-black leading-tight tracking-tight mb-12 text-brand-dark text-center">
-          Questions? We've got answers.
+          Questions? We've got answers
         </h2>
 
         <div className="divide-y divide-brand-dark/10">
           {FAQS.map((faq, i) => (
             <div key={i}>
               <button
-                onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                onClick={() => toggle(i)}
                 className="w-full flex items-center justify-between gap-4 py-5 text-left text-brand-dark font-bold text-lg hover:text-brand-blue motion-safe:transition-colors"
-                aria-expanded={openIndex === i}
+                aria-expanded={openIndices.has(i)}
               >
                 <span>{faq.q}</span>
                 <span className="text-brand-blue text-xl leading-none shrink-0">
-                  {openIndex === i ? '−' : '+'}
+                  {openIndices.has(i) ? '−' : '+'}
                 </span>
               </button>
-              {openIndex === i && (
+              {openIndices.has(i) && (
                 <p className="pb-5 text-brand-dark/65 text-lg leading-relaxed">
                   {faq.a}
                 </p>

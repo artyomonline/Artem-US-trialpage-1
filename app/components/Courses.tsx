@@ -67,6 +67,13 @@ export default function Courses() {
           ))}
         </div>
 
+        <p className="text-center text-[16px] text-brand-dark mt-8 leading-relaxed">
+          Not sure which course fits? Select 'Not sure - help me choose' when{' '}
+          <a href="#signup-form" className="text-brand-green font-bold hover:underline">
+            signing up
+          </a>{' '}
+          and we'll find the right match for your child.
+        </p>
 
       </div>
     </section>

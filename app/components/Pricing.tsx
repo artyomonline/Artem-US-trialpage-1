@@ -14,7 +14,7 @@ export default function Pricing() {
 
         {/* Headline */}
         <h2 className="text-[32px] sm:text-[48px] font-black leading-tight tracking-tight mb-8">
-          Start for <span className="text-brand-green">$7.</span> Then decide.
+          Start for <span className="text-brand-green">$7.</span> Then decide
         </h2>
 
         {/* Price anchor — $640 shown first, per GROWTH_PRINCIPLES #2 */}

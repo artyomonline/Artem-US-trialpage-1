@@ -7,7 +7,7 @@ export default function Problem() {
           You've tried everything.
           <br />
           Math still isn't{' '}
-          <span className="text-brand-green">clicking.</span>
+          <span className="text-brand-green">clicking</span>
         </h2>
 
         <div className="space-y-8 text-lg text-white/75 leading-[1.8]">
