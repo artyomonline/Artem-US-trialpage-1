@@ -8,4 +8,5 @@ body {
   color: #101626;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
