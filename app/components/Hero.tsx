@@ -32,6 +32,7 @@ export default function Hero() {
         {/* Primary CTA */}
         <button
           onClick={scrollToNext}
+          data-cta
           className="inline-block bg-brand-green text-brand-dark font-black text-lg px-10 py-4 motion-safe:transition-colors hover:bg-[#c9f500]"
         >
           See how it works

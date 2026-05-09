@@ -15,7 +15,7 @@ export default function Eddie() {
         <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-10 lg:gap-16 mb-12">
 
           {/* Eddie photo */}
-          <div className="relative w-full overflow-hidden lg:self-stretch" style={{ border: '2px solid #101626' }}>
+          <div className="relative w-fit max-w-full mx-auto overflow-hidden lg:w-full lg:self-stretch" style={{ border: '2px solid #101626' }}>
             <Image
               src="/assets/img/eddie_1.webp"
               alt="Eddie Kang - MyEdSpace math teacher"

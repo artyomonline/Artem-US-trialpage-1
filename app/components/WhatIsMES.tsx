@@ -25,15 +25,19 @@ export default function WhatIsMES() {
         </div>
 
         {/* Intro */}
-        <div className="max-w-2xl mx-auto text-center mb-14">
+        <div className="max-w-2xl mb-14">
           <p className="text-lg text-brand-dark/65 leading-relaxed mb-4">
-            MyEdSpace is a live online math class: real teacher, real curriculum,
-            twice a week. Your child joins from home on any device, asks questions
-            in real time, and never falls behind because every session is recorded.
+            This is Eddie's classroom. Your child gets a front-row seat.
+          </p>
+          <p className="text-lg text-brand-dark/65 leading-relaxed mb-4">
+            Live math class, twice a week. Same teacher, same curriculum,
+            same group — building on itself week after week until it
+            actually sticks.
           </p>
           <p className="text-lg text-brand-dark/65 leading-relaxed">
-            No random tutors. No passive video watching. A structured class that
-            builds on itself, every single week.
+            Your child joins from home, asks questions live, rewatches
+            anything they missed. No random tutors. No starting over
+            every session.
           </p>
         </div>
 
@@ -114,7 +118,7 @@ export default function WhatIsMES() {
         </div>
 
         {/* Closing line */}
-        <p className="text-center text-lg text-brand-dark/65 leading-relaxed">
+        <p className="text-center text-[20px] font-bold text-brand-dark/65 leading-relaxed">
           Everything designed for one thing: your child feeling{' '}
           <span className="text-brand-green font-black">confident</span> in math.
         </p>

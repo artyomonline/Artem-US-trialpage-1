@@ -36,19 +36,19 @@ export default function Comparison() {
                 style={{ borderRight: '1px solid #e5e7eb', borderBottom: '1px solid #e5e7eb' }}
               />
               <th
-                className="p-4 text-center text-brand-dark font-bold text-lg bg-white"
+                className="p-2 sm:p-4 text-center text-brand-dark font-bold text-xs sm:text-lg bg-white"
                 style={{ borderRight: '1px solid #e5e7eb', borderBottom: '1px solid #e5e7eb' }}
               >
                 School
               </th>
               <th
-                className="p-4 text-center text-brand-dark font-bold text-lg bg-white"
+                className="p-2 sm:p-4 text-center text-brand-dark font-bold text-xs sm:text-lg bg-white"
                 style={{ borderRight: '1px solid #e5e7eb', borderBottom: '1px solid #e5e7eb' }}
               >
                 Private<br />Tutor
               </th>
               <th
-                className="p-4 text-center text-brand-dark font-bold text-lg bg-brand-green"
+                className="p-2 sm:p-4 text-center text-brand-dark font-bold text-xs sm:text-lg bg-brand-green"
                 style={{ borderBottom: '1px solid #e5e7eb' }}
               >
                 MyEdSpace
