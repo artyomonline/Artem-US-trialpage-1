@@ -140,7 +140,7 @@ export default function FinalCTA({ selectedGrade }: Props) {
         {/* Trust signals */}
         <p className="mt-6 text-center text-sm text-white/50">
           <span className="text-brand-green">★★★★★</span>{' '}
-          Trusted by 21,000+ families · Cancel anytime
+          Trusted by 21,000+ families
         </p>
 
       </div>
